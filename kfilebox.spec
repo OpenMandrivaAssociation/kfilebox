@@ -2,12 +2,11 @@
 
 Name: kfilebox
 Summary: KDE front-end for Dropbox
-Version: 0.4.7
-Release: %mkrel 1
+Version: 0.4.9
+Release: 1
 License: GPLv2
 Group: Networking/File transfer 
-BuildRoot: %{_tmppath}/%name-%version-%release-buildroot
-Source0: http://sourceforge.net/projects/kdropbox/files/%{name}-%{version}/Source/%{name}-%{version}.tar.gz
+Source0: http://sourceforge.net/projects/kdropbox/files/%{name}-%{version}/Source/%{name}_%{version}.tar.gz
 Url: http://kdropbox.deuteros.es/
 
 BuildRequires: gcc-c++ 
@@ -21,7 +20,7 @@ KDE front-end for Dropbox. This is free software, but it requires the
 proprietary dropbox daemon that will be downloaded at first run.
 
 %prep
-%setup -q
+%setup -q -n %{name}_%{version}
 
 %build
 %qmake  
@@ -103,11 +102,7 @@ Comment=Any notification
 Action=Popup
 EOF
 
-%clean
-rm -rf %{buildroot}
-
 %files -f %name.lang 
-%defattr(-,root,root)  
 %dir %{_datadir}/kfilebox  
 %doc doc/readme.txt  
 %{_datadir}/applications/kfilebox.desktop  
