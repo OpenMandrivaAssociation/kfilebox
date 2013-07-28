@@ -1,9 +1,10 @@
 %define qmake /usr/lib/qt4/bin/qmake -makefile 
+%define debug_package          %{nil}
 
 Name: kfilebox
 Summary: KDE front-end for Dropbox
 Version: 0.4.9
-Release: 2
+Release: 3
 License: GPLv2
 Group: Networking/File transfer 
 Source0: http://sourceforge.net/projects/kdropbox/files/%{name}-%{version}/Source/%{name}_%{version}.tar.gz
