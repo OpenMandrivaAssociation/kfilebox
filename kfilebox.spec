@@ -1,20 +1,20 @@
 %define qmake /usr/lib/qt4/bin/qmake -makefile 
 %define debug_package          %{nil}
 
-Name: kfilebox
-Summary: KDE front-end for Dropbox
-Version: 0.4.9
-Release: 3
-License: GPLv2
-Group: Networking/File transfer 
-Source0: http://sourceforge.net/projects/kdropbox/files/%{name}-%{version}/Source/%{name}_%{version}.tar.gz
-Url: http://kdropbox.deuteros.es/
+Name:	kfilebox
+Summary:	KDE front-end for Dropbox
+Version:	0.4.9
+Release:	4
+License:	GPLv2
+Group:		Networking/File transfer 
+Source0:	http://sourceforge.net/projects/kdropbox/files/%{name}-%{version}/Source/%{name}_%{version}.tar.gz
+Url:		http://kdropbox.deuteros.es/
 
-BuildRequires: gcc-c++ 
-BuildRequires: make
-BuildRequires: pkgconfig(Qt3Support)
-BuildRequires: qt4-linguist
-BuildRequires: kdelibs4-devel
+BuildRequires:	gcc-c++ 
+BuildRequires:	make
+BuildRequires:	pkgconfig(Qt3Support)
+BuildRequires:	qt4-linguist
+BuildRequires:	kdelibs4-devel
 
 %description
 KDE front-end for Dropbox. This is free software, but it requires the
