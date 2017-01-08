@@ -10,11 +10,11 @@ Group: Networking/File transfer
 Source0: https://github.com/gtgt/kfilebox/releases/%{name}-%{version}.tar.gz
 Url: http://kdropbox.deuteros.es/
 
-BuildRequires: gcc-c++ 
-BuildRequires: make
-BuildRequires: pkgconfig(Qt3Support)
-BuildRequires: qt4-linguist
-BuildRequires: kdelibs4-devel
+BuildRequires:	gcc-c++ 
+BuildRequires:	make
+BuildRequires:	pkgconfig(Qt3Support)
+BuildRequires:	qt4-linguist
+BuildRequires:	kdelibs4-devel
 
 %description
 KDE front-end for Dropbox. This is free software, but it requires the
