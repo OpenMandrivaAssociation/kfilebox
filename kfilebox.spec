@@ -13,6 +13,7 @@ Url: http://kdropbox.deuteros.es/
 BuildRequires:	gcc-c++ 
 BuildRequires:	make
 BuildRequires:	pkgconfig(Qt3Support)
+BuildRequires:	pkgconfig(QJson)
 BuildRequires:	qt4-linguist
 BuildRequires:	kdelibs4-devel
 
