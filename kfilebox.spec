@@ -8,7 +8,7 @@ Release: 1
 License: GPLv2
 Group: Networking/File transfer 
 Source0: https://github.com/gtgt/kfilebox/releases/%{name}-%{version}.tar.gz
-Url: http://kdropbox.deuteros.es/
+Url: https://kdropbox.deuteros.es/
 
 BuildRequires:	gcc-c++ 
 BuildRequires:	make
